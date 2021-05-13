@@ -4,6 +4,7 @@ import java.util.StringJoiner;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Transient;
 
 import com.kakaopay.payment.advice.exceptions.EncryptException;
 import com.kakaopay.payment.util.AESUtil;
@@ -17,6 +18,7 @@ import lombok.NoArgsConstructor;
 @Embeddable
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Card {
+	@Transient
 	private final String separator = "|";
 	
 	@Column(name = "CARD_NO", nullable = false, length = 16)
