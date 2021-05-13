@@ -22,7 +22,7 @@ public class Card {
 	@Column(name = "CARD_NO", nullable = false, length = 16)
     private String cardNo;
 
-    @Column(name = "EXPIRE", nullable = false)
+    @Column(name = "EXPIRE", nullable = false, length = 4)
     private String expire;
     
     @Column(name = "CVC", nullable = false, length = 3)
