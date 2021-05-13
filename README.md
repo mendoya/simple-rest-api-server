@@ -38,16 +38,17 @@ gradlew clean bootJar
 ```
 java -jar build\libs\simple-rest-api-server-0.0.1-SNAPSHOT.jar
 ```
-### Request URI
- * 결제
+### Request URL
+ * localhost:8080
+ * 결제 URI
   ```
   POST /v1/payments
   ```
- * 결제조회
+ * 결제조회 URI
   ```
   GET /v1/payments/{paymentId}
   ```
- * 결제취소
+ * 결제취소 URI
   ```
   POST /v1/payments/cancel
   ```
