@@ -25,7 +25,7 @@ public class Card {
     @Column(name = "EXPIRE", nullable = false)
     private String expire;
     
-    @Column(name = "CVC", nullable = false)
+    @Column(name = "CVC", nullable = false, length = 3)
     private String cvc;
     
     public Card(String encryptedCardString) {
